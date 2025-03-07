@@ -56,7 +56,7 @@ export default function Home() {
         {/* About Me Section - Always Second on Mobile */}
         <div className="bg-card rounded-lg p-4 col-span-1 md:col-span-2 order-2 md:order-3 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
           <h2 className="text-lg md:text-xl font-bold mb-3">About me</h2>
-          <p className="mb-3 text-xs md:text-sm">I have expertise in mixed-methods research. Currently pursuing a Ph.D. in Journalism and Communication while working as a Snap AR Scholar. And I like talking to people!!</p>
+          <p className="mb-3 text-xs md:text-sm">I have expertise in mixed-methods research. Currently pursuing a Ph.D. in Journalism and Communication while working as a Snap AR Scholar with Snapchat. I also like talking to people!!</p>
           
           <h3 className="text-base md:text-lg mb-2">Skills</h3>
           <ul className="list-disc list-inside space-y-1 text-gray-300 text-xs md:text-sm">
