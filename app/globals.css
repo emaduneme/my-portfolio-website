@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark theme colors (default) */
+  --background: #000000;
+  --card: #1a1a1a;
+  --primary: #3b82f6;
+  --text: #ffffff;
+  --text-gray: #9ca3af;
+}
+
+/* Light theme colors */
+html.light-mode {
+  --background: #ffffff;
+  --card: #f3f4f6;
+  --primary: #2563eb;
+  --text: #000000;
+  --text-gray: #4b5563;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--background);
+}
+
+/* Apply theme colors to common elements */
+.bg-card {
+  background-color: var(--card);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-gray-300 {
+  color: var(--text-gray);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} 
