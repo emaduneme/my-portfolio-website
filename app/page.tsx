@@ -33,31 +33,31 @@ export default function Home() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Welcome Section */}
-        <div className="bg-card rounded-lg p-4 col-span-2 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-          <h1 className="text-2xl font-bold mb-2">Hi, I'm <span className="text-primary">Emmanuel Maduneme</span></h1>
-          <p className="text-base text-gray-300">A Ph.D student in Media Psychology and UX Researcher from Eugene, Oregon</p>
+        <div className="bg-card rounded-lg p-4 col-span-1 md:col-span-2 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
+          <h1 className="text-xl md:text-2xl font-bold mb-2">Hi, I'm <span className="text-primary">Emmanuel Maduneme</span></h1>
+          <p className="text-sm md:text-base text-gray-300">A Ph.D student in Media Psychology and UX Researcher from Eugene, Oregon</p>
         </div>
         
         {/* Resume Section */}
         <div className="bg-card rounded-lg p-4 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-          <h2 className="text-xl font-bold mb-2">Resume</h2>
+          <h2 className="text-lg md:text-xl font-bold mb-2">Resume</h2>
           <a 
             href="https://drive.google.com/file/d/1AAW90y5jh3jaUHhOF0Ykyba4v2dY43c1/view?usp=drive_link" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="inline-block bg-primary text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors duration-300"
+            className="inline-block bg-primary text-white px-3 py-2 text-sm md:text-base md:px-4 md:py-2 rounded-md hover:bg-blue-600 transition-colors duration-300"
           >
             View Resume
           </a>
         </div>
         
         {/* About Me Section */}
-        <div className="bg-card rounded-lg p-4 col-span-2 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-          <h2 className="text-xl font-bold mb-3">About me</h2>
-          <p className="mb-3 text-sm">I have expertise in mixed-methods research. Currently pursuing a Ph.D. in Journalism and Communication while working as a Snap AR Scholar. And I like talking to people!!</p>
+        <div className="bg-card rounded-lg p-4 col-span-1 md:col-span-2 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
+          <h2 className="text-lg md:text-xl font-bold mb-3">About me</h2>
+          <p className="mb-3 text-xs md:text-sm">I have expertise in mixed-methods research. Currently pursuing a Ph.D. in Journalism and Communication while working as a Snap AR Scholar. And I like talking to people!!</p>
           
-          <h3 className="text-lg mb-2">Skills</h3>
-          <ul className="list-disc list-inside space-y-1 text-gray-300 text-sm">
+          <h3 className="text-base md:text-lg mb-2">Skills</h3>
+          <ul className="list-disc list-inside space-y-1 text-gray-300 text-xs md:text-sm">
             <li>Experimental Designs</li>
             <li>Surveys</li>
             <li>Interviews</li>
@@ -71,14 +71,14 @@ export default function Home() {
         <div className="flex flex-col justify-start space-y-4">
           {/* Current Time Section */}
           <div className="bg-card rounded-lg p-3 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-            <h2 className="text-sm font-medium mb-1">Current Time</h2>
-            <p className="text-xl font-bold">{currentTime}</p>
+            <h2 className="text-xs md:text-sm font-medium mb-1">Current Time</h2>
+            <p className="text-lg md:text-xl font-bold">{currentTime}</p>
           </div>
           
           {/* Connect Section */}
           <div className="bg-card rounded-lg p-3 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-            <h2 className="text-base font-bold mb-2">Let's Connect</h2>
-            <div className="flex space-x-4 text-xl">
+            <h2 className="text-sm md:text-base font-bold mb-2">Let's Connect</h2>
+            <div className="flex space-x-4 text-lg md:text-xl">
               <a href="https://www.linkedin.com/in/emmanuel-maduneme" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-primary transition-all duration-300 hover:scale-125">
                 <FaLinkedin />
               </a>
@@ -91,21 +91,21 @@ export default function Home() {
       
         {/* Featured Projects Section */}
         <div className="col-span-3">
-          <h2 className="text-2xl font-bold mb-3">Featured Projects</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-3">Featured Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Project 1 */}
             <Link href="/projects/project1" className="block">
               <div className="bg-card rounded-lg p-4 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg h-full">
-                <h3 className="text-lg font-bold mb-2">Usability Testing for AR Experiences</h3>
-                <p className="text-primary">View Project &rarr;</p>
+                <h3 className="text-base md:text-lg font-bold mb-2">Usability Testing for AR Experiences</h3>
+                <p className="text-primary text-sm md:text-base">View Project &rarr;</p>
               </div>
             </Link>
             
             {/* Project 2 */}
             <Link href="/projects/project2" className="block">
               <div className="bg-card rounded-lg p-4 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg h-full">
-                <h3 className="text-lg font-bold mb-2">Experimental A/B Test for Solutions Journalism Approaches</h3>
-                <p className="text-primary">View Project &rarr;</p>
+                <h3 className="text-base md:text-lg font-bold mb-2">Experimental A/B Test for Solutions Journalism Approaches</h3>
+                <p className="text-primary text-sm md:text-base">View Project &rarr;</p>
               </div>
             </Link>
           </div>

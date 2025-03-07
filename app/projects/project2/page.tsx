@@ -8,11 +8,11 @@ export const metadata: Metadata = {
 
 export default function Project2() {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-4">Experimental A/B Test for Solutions Journalism Approaches</h1>
+    <main className="max-w-4xl mx-auto px-4 py-6 md:py-8">
+      <h1 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Experimental A/B Test for Solutions Journalism Approaches</h1>
       
       {/* Hero Image */}
-      <div className="relative w-full aspect-[1152/648] mb-8 rounded-lg overflow-hidden">
+      <div className="relative w-full aspect-[1152/648] mb-6 md:mb-8 rounded-lg overflow-hidden">
         <Image 
           src="/images/projects/project2/hero.png" 
           alt="Project hero image showing solutions journalism research" 
@@ -23,31 +23,31 @@ export default function Project2() {
         />
       </div>
       
-      <div className="bg-card rounded-lg p-6 mb-8">
+      <div className="bg-card rounded-lg p-4 md:p-6 mb-6 md:mb-8">
         {/* Project Overview Section */}
-        <div className="mb-6">
-          <h2 className="text-2xl font-bold mb-2">Project Overview</h2>
-          <div className="bg-background p-6 rounded-md space-y-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="mb-5 md:mb-6">
+          <h2 className="text-xl md:text-2xl font-bold mb-2">Project Overview</h2>
+          <div className="bg-background p-4 md:p-6 rounded-md space-y-3 md:space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
               <div>
-                <h3 className="text-xl font-semibold mb-2">Client & Role</h3>
-                <p className="text-gray-300">News Organizations</p>
-                <p className="text-gray-300">Academic Researcher</p>
+                <h3 className="text-lg md:text-xl font-semibold mb-1 md:mb-2">Client & Role</h3>
+                <p className="text-gray-300 text-sm md:text-base">News Organizations</p>
+                <p className="text-gray-300 text-sm md:text-base">Academic Researcher</p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Timeline</h3>
-                <p className="text-gray-300">8-16 Weeks</p>
+                <h3 className="text-lg md:text-xl font-semibold mb-1 md:mb-2">Timeline</h3>
+                <p className="text-gray-300 text-sm md:text-base">8-16 Weeks</p>
               </div>
             </div>
             
             <div>
-              <h3 className="text-xl font-semibold mb-2">Methods</h3>
-              <p className="text-gray-300">Experimental Methods, Evaluative Research, Survey Design</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-1 md:mb-2">Methods</h3>
+              <p className="text-gray-300 text-sm md:text-base">Experimental Methods, Evaluative Research, Survey Design</p>
             </div>
             
             <div>
-              <h3 className="text-xl font-semibold mb-2">Tools</h3>
-              <p className="text-gray-300">Qualtrics, Cloud Research (for recruitment)</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-1 md:mb-2">Tools</h3>
+              <p className="text-gray-300 text-sm md:text-base">Qualtrics, Cloud Research (for recruitment)</p>
             </div>
           </div>
         </div>

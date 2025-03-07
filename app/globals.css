@@ -42,6 +42,19 @@ body {
   background-color: var(--primary);
 }
 
+/* Project page specific styles */
+.bg-background {
+  background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+}
+
+p {
+  color: var(--text);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
