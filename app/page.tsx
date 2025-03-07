@@ -31,15 +31,17 @@ export default function Home() {
       <div className="flex justify-end mb-4">
         <ThemeToggle />
       </div>
+      
+      {/* Main Content Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {/* Welcome Section */}
-        <div className="bg-card rounded-lg p-4 col-span-1 md:col-span-2 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
+        {/* Welcome Section - Always First on Mobile and Desktop */}
+        <div className="bg-card rounded-lg p-4 col-span-1 md:col-span-2 order-1 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
           <h1 className="text-xl md:text-2xl font-bold mb-2">Hi, I'm <span className="text-primary">Emmanuel Maduneme</span></h1>
           <p className="text-sm md:text-base text-gray-300">A Ph.D student in Media Psychology and UX Researcher from Eugene, Oregon</p>
         </div>
         
         {/* Resume Section */}
-        <div className="bg-card rounded-lg p-4 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
+        <div className="bg-card rounded-lg p-4 order-3 md:order-2 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
           <h2 className="text-lg md:text-xl font-bold mb-2">Resume</h2>
           <a 
             href="https://drive.google.com/file/d/1AAW90y5jh3jaUHhOF0Ykyba4v2dY43c1/view?usp=drive_link" 
@@ -51,8 +53,8 @@ export default function Home() {
           </a>
         </div>
         
-        {/* About Me Section */}
-        <div className="bg-card rounded-lg p-4 col-span-1 md:col-span-2 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
+        {/* About Me Section - Always Second on Mobile */}
+        <div className="bg-card rounded-lg p-4 col-span-1 md:col-span-2 order-2 md:order-3 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
           <h2 className="text-lg md:text-xl font-bold mb-3">About me</h2>
           <p className="mb-3 text-xs md:text-sm">I have expertise in mixed-methods research. Currently pursuing a Ph.D. in Journalism and Communication while working as a Snap AR Scholar. And I like talking to people!!</p>
           
@@ -68,7 +70,7 @@ export default function Home() {
         </div>
 
         {/* Side Section Container */}
-        <div className="flex flex-col justify-start space-y-4">
+        <div className="flex flex-col justify-start space-y-4 order-4">
           {/* Current Time Section */}
           <div className="bg-card rounded-lg p-3 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
             <h2 className="text-xs md:text-sm font-medium mb-1">Current Time</h2>
@@ -90,7 +92,7 @@ export default function Home() {
         </div>
       
         {/* Featured Projects Section */}
-        <div className="col-span-3">
+        <div className="col-span-1 md:col-span-3 order-5">
           <h2 className="text-xl md:text-2xl font-bold mb-3">Featured Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Project 1 */}
