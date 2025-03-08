@@ -182,20 +182,32 @@ export default function Project1() {
         <div className="mb-8">
           <h2 className="text-2xl font-bold mb-4">Findings</h2>
           
-          {/* Findings Image */}
-          <a 
-            href="https://www.canva.com/design/DAGEysnplyY/CdS9MiGNG2KuABx2sdTWiw/edit?utm_content=DAGEysnplyY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block relative w-full h-[400px] mb-6 rounded-lg overflow-hidden hover:opacity-90 transition-opacity"
-          >
-            <Image 
-              src="/images/projects/project1/Findings Visualization.png" 
-              alt="Visualization of key findings" 
-              fill
-              style={{ objectFit: 'cover' }}
-            />
-          </a>
+          {/* Findings Image with Caption */}
+          <div className="mb-6">
+            <a 
+              href="https://www.canva.com/design/DAGEysnplyY/CdS9MiGNG2KuABx2sdTWiw/edit?utm_content=DAGEysnplyY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block relative w-full h-[400px] rounded-lg overflow-hidden hover:opacity-90 transition-opacity"
+            >
+              <Image 
+                src="/images/projects/project1/Findings Visualization.png" 
+                alt="Affinity map showing the emerging themes from the usability session" 
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </a>
+            <div className="mt-3 text-center">
+              <a 
+                href="https://www.canva.com/design/DAGEysnplyY/CdS9MiGNG2KuABx2sdTWiw/edit?utm_content=DAGEysnplyY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-primary text-sm italic transition-colors"
+              >
+                Affinity map showing the emerging themes from the usability session
+              </a>
+            </div>
+          </div>
 
           {/* Spatial Interaction Challenges */}
           <div className="mb-8">
