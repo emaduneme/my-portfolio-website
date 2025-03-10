@@ -204,7 +204,7 @@ export default function Project1() {
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-primary text-sm italic transition-colors"
               >
-                Affinity map showing the emerging themes from the usability session
+                Click here to view the Affinity map showing the emerging themes from the usability session
               </a>
             </div>
           </div>
