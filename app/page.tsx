@@ -96,7 +96,7 @@ export default function Home() {
           <h2 className="text-xl md:text-2xl font-bold mb-3">Featured Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Project 1 */}
-            <Link href="/projects/project1" className="block">
+            <Link href="/projects/ar-usability" className="block">
               <div className="bg-card rounded-lg p-4 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg h-full">
                 <h3 className="text-base md:text-lg font-bold mb-2">Usability Testing for AR Experiences</h3>
                 <p className="text-primary text-sm md:text-base">View Project &rarr;</p>
@@ -104,7 +104,7 @@ export default function Home() {
             </Link>
             
             {/* Project 2 */}
-            <Link href="/projects/project2" className="block">
+            <Link href="/projects/solutions-journalism" className="block">
               <div className="bg-card rounded-lg p-4 transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg h-full">
                 <h3 className="text-base md:text-lg font-bold mb-2">Experimental A/B Test for Solutions Journalism Approaches</h3>
                 <p className="text-primary text-sm md:text-base">View Project &rarr;</p>
