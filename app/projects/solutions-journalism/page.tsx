@@ -2,8 +2,27 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Experimental A/B Test for Solutions Journalism Approaches | Emmanuel Maduneme',
-  description: 'A study on the psychological effects of social media interfaces on user behavior',
+  title: 'Experimental A/B Test for Solutions Journalism Approaches',
+  description: 'Research study exploring how solutions journalism affects reader engagement and pro-environmental action intentions compared to traditional problem-focused reporting.',
+  openGraph: {
+    title: 'Solutions Journalism Research Study',
+    description: 'Experimental study comparing solutions-oriented vs problem-oriented news stories and their impact on reader engagement',
+    images: [
+      {
+        url: '/images/projects/project2/hero.png',
+        width: 1152,
+        height: 648,
+        alt: 'Solutions Journalism Research Study Hero Image',
+      }
+    ],
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Solutions Journalism Research Study',
+    description: 'Experimental study on news engagement and psychological effects',
+    images: ['/images/projects/project2/hero.png'],
+  }
 }
 
 export default function Project2() {
@@ -19,7 +38,7 @@ export default function Project2() {
           fill
           style={{ objectFit: 'cover' }}
           priority
-          unoptimized
+          sizes="(max-width: 768px) 100vw, 1152px"
         />
       </div>
       
@@ -152,7 +171,7 @@ export default function Project2() {
                     alt="Solutions-oriented news story prototype" 
                     fill
                     style={{ objectFit: 'contain' }}
-                    unoptimized
+                    sizes="365px"
                   />
                 </div>
               </a>
@@ -177,7 +196,7 @@ export default function Project2() {
                     alt="Problem-oriented news story prototype" 
                     fill
                     style={{ objectFit: 'contain' }}
-                    unoptimized
+                    sizes="365px"
                   />
                 </div>
               </a>
